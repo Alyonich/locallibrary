@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Local Library Home</h1>
+
+
+
+
+
+
+<h2>Библиотечное состояние</h2>
+
+<ul>
+<li><strong>Книги:</strong> {{ num_books }}</li>
+<li><strong>Копии:</strong> {{ num_instances }}</li>
+<li><strong>Доступные копии:</strong> {{ num_instances_available }}</li>
+<li><strong>Авторы:</strong> {{ num_authors }}</li>
+</ul>
+
+
+<p>Вы посетили эту страницу {{ num_visits }} р.</p>
+
+{% endblock %}
