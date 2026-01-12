@@ -25,3 +25,5 @@ jobs:
     - name: Run Django tests
       run: |
         python manage.py test catalog.tests
+    - name: Deploy
+      run: echo "Deploy successful"
